@@ -60,6 +60,7 @@ func Check() error {
 
 	io.Errorf(io.BoldRed("Your Scalingo client (%s) is out-of-date: some features may not work correctly.\n"), version)
 	io.Errorf(io.BoldRed("Please update to '%s' by reinstalling it: https://cli.scalingo.com\n"), lastVersion)
+	io.Errorf(io.BoldRed("Or use 'curl -O https://cli-dl.scalingo.io/install && bash install' to update from your shell.\n"))
 	return nil
 }
 
